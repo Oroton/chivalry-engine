@@ -3,8 +3,8 @@ if (file_exists('./installer.lock'))
 {
     exit;
 }
-$Version=('0.0.40');
-$Build=('0040');
+$Version=('0.0.41');
+$Build=('0041');
 define('MONO_ON', 1);
 session_name('CENGINE');
 session_start();
@@ -602,7 +602,8 @@ EOF;
                     . "mess up your game entirely." . "</span>";
         }
     }
-	echo "<br />Crons have been set to start tomorrow at midnight.";
+	echo "<br />Crons have been set to start tomorrow at midnight.
+              <br /> Go to <a href='index.php'>Home</a>;
 }
 if ($_GET['code'] != 'install')
 {
